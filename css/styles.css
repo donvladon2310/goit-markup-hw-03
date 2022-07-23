@@ -174,18 +174,26 @@ margin: 30px auto 0;
 .features {
     padding-bottom: 0px;
 }
-.features-titel{
-    width: 0;
-    height: 0;
-    color: var(--primary-white-color);
-}
+ .visually-hidden {
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        margin: -1px; 
+      }
+      
 .features-content{
     display: flex;
-    margin-left: auto;
 }
 .features-list{
     width: 270px;
-    height: 98px;
+    height: 101px;
+    margin-left: auto;
 }
 .features-list .item{
     margin-right: 30px;
@@ -347,12 +355,6 @@ cursor: default;
     margin-right: auto;
     
 }
-.filter-titel{
-    width: 0;
-    height: 0;
-    color: var(--primary-white-color);
-}
-
 .filter {
 margin-bottom: 34px;
 display: flex;
